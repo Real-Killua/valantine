@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Valentine Proposal</title>
+    <style>
+        body {
+            background-color: #ffe6f2; /* Light pink background */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #ff1493; /* Deep pink for the title */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: #ff69b4; /* Hot pink heart */
+            position: relative;
+            margin: 20px auto;
+            transform: rotate(-45deg);
+            animation: float 3s ease-in-out infinite; /* Makes it float up and down */
+        }
+        .heart:before,
+        .heart:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: #ff69b4;
+            border-radius: 50px 50px 0 0;
+            position: absolute;
+        }
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(-45deg); }
+            50% { transform: translateY(-20px) rotate(-45deg); }
+        }
+        button {
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff69b4;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You Be My Valentine?</h1>
+    <p>Dear Fatoom,</p>
+    <p>From the moment we met, you've made my world brighter and my heart fuller. You're the best thing that's ever happened to me, and I can't imagine celebrating Valentine's Day with anyone else.</p>
+    <p>Will you be my Valentine? 💕</p>
+    <div class="heart"></div> <!-- Animated heart -->
+    <!-- Optional: Add a photo. Replace 'your-photo.jpg' with a link to an image (see tips below) -->
+    <img src="https://via.placeholder.com/300x200/ff69b4/ffffff?text=Our+Photo" alt="Us together" />
+    <button onclick="alert('Yay! I love you! ❤️')">Click for a Surprise!</button>
+</body>
+</html>
